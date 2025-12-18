@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Student Internship Portal{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="animated-bg"></div>
+
+<nav class="navbar">
+    <div class="logo">Student Internship Portal</div>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/internships/">Find Internships</a></li>
+        <li><a href="/accounts/dashboard/">Dashboard</a></li>
+        <li><a href="/admin/" target="_blank">Add Internship</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

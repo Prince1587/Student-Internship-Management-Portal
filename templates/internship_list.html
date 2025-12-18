@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Find Internships{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <h1>Find Your Dream Internship</h1>
+    <p>Explore internships and kickstart your career</p>
+</section>
+
+<section class="internship-section">
+    {% for internship in internships %}
+    <div class="internship-card">
+        <h3>{{ internship.title }}</h3>
+        <p>{{ internship.description }}</p>
+        <span>Stipend: ₹{{ internship.stipend }}</span>
+        <a href="/apply/{{ internship.id }}/" class="btn-primary">Apply Now</a>
+    </div>
+    {% empty %}
+    <p>No internships available</p>
+    {% endfor %}
+</section>
+
+{% endblock %}
