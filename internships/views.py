@@ -19,7 +19,12 @@ def apply_internship(request, internship_id):
             address=request.POST.get('address'),
             resume=request.FILES.get('resume')
         )
-        return redirect('/success/')
+        
+        return redirect('application_success')
 
     return render(request, 'apply_internship.html', {'internship': internship})
 
+from django.shortcuts import render
+
+def application_success(request):
+    return render(request, 'internships/success.html')
