@@ -59,7 +59,7 @@ A full-stack Django web application that allows students to explore and apply fo
 ## ⚙️ Installation & Setup
 
 ```bash
-git clone https://github.com/Prince1587/-Student-Internship-Management-Portal.git
+git clone https://github.com/Prince1587/Student-Internship-Management-Portal.git
 cd Student_internship_portal
 python -m venv venv
 venv\Scripts\activate
