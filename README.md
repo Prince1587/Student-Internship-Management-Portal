@@ -8,7 +8,7 @@ The application is deployed on **AWS EC2** with a production-ready setup using *
 ## 🌐 Live Demo
 
 🔗 **Live Application:**  
-http://3.26.131.158/ 
+[**🚀 View Live App**](http://3.26.131.158/)
 
 > *(Hosted on AWS EC2 — may be paused when not in use)*
 
